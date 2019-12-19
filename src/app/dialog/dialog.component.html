@@ -1,7 +1,6 @@
 <div class="modal-container">
     <div class="modal-backdrop" (click)="onOverlayClicked($event)"></div>
-    <div class="modal-body">
-      {{config?.width}}
+    <div class="modal-body" [ngStyle]="{width: config?.width}">
       <ng-template appInsertion> </ng-template>
     </div>
 </div>
