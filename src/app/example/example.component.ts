@@ -13,6 +13,11 @@ export class ExampleComponent {
  
  
   onClose() {
-    this.dialog.close(true)
+    this.dialog.close({
+      isClosed: true,
+      data: {
+          message: 'Something to pass'
+        }
+    })
   }
 }

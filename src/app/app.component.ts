@@ -21,9 +21,11 @@ export class AppComponent   {
     );
 
     ref.afterClosed.subscribe(result => {
-      if(result){
-        console.log('Dialog closed', result);
+      if(!result.isClosed){
+        return;
       }
+      console.log(result.data);
+      
       
     });
   }
