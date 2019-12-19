@@ -2,6 +2,7 @@ import { Component, Type, ComponentFactoryResolver, ViewChild, OnDestroy, Compon
 import { Subject } from 'rxjs';
 import { InsertionDirective } from './insertion.directive';
 import { DialogRef } from './dialog-refs';
+import { DialogConfig } from './dialog-config';
 
 @Component({
   selector: 'app-dialog',
@@ -22,7 +23,8 @@ export class DialogComponent implements AfterViewInit, OnDestroy {
   // and this:
   constructor(private componentFactoryResolver: ComponentFactoryResolver,
   private cd: ChangeDetectorRef,
-  private dialogRef: DialogRef
+  private dialogRef: DialogRef,
+  private config: DialogConfig
   ) {}
 
   ngAfterViewInit() {
