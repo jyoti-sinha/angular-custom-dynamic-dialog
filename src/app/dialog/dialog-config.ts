@@ -1,3 +1,4 @@
 export class DialogConfig<D = any> {
-  data?: D
+  data?: D;
+  width?: string;
 }

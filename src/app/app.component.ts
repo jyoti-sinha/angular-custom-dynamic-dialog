@@ -15,7 +15,7 @@ export class AppComponent   {
       { 
         data: { 
             message: 'I am a dynamic component inside of a dialog!' 
-        },
+        }, 
         width: '900px' 
       }
     );
